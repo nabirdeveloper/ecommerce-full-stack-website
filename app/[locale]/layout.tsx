@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   description: "Full-stack e-commerce platform with admin dashboard",
 };
 
+export function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'bn' }];
+}
+
 export default async function LocaleLayout({
   children,
   params
